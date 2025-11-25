@@ -4,8 +4,21 @@ body {
   margin: 0;
   padding: 0;
 }
-h1, h2 { margin: 0; }
-p { margin: 0; line-height: 1.4; color: #555; }
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  margin: 10px 0 5px;
+}
+
+p {
+  margin: 0 16px 16px;
+  line-height: 1.4;
+  color: #555;
+}
 
 .cat-container {
   display: flex;
@@ -33,13 +46,22 @@ p { margin: 0; line-height: 1.4; color: #555; }
   border-top-right-radius: 10px;
 }
 
-.cat-card h2 { font-size: 1.2rem; margin: 10px 16px 5px; }
-.cat-card p { font-size: 0.95rem; margin: 0 16px 16px; }
-
-.cat-card:hover { transform: scale(1.05); }
+.cat-card:hover {
+  transform: scale(1.05);
+}
 
 @media (max-width: 768px) {
-  .cat-container { flex-direction: column; align-items: center; }
-  .cat-card { width: 80%; }
+  .cat-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cat-card {
+    width: 80%;
+  }
 }
-@media (max-width: 480px) { .cat-card { width: 95%; } }
+
+@media (max-width: 480px) {
+  .cat-card {
+    width: 95%;
+  }
+}

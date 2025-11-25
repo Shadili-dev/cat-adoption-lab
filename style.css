@@ -1,67 +1,64 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f5f5f5;
 }
 
-h1 {
-  text-align: center;
-  margin-top: 20px;
+header {
+    background-color: #ffcccb;
+    padding: 20px 0;
 }
 
-h2 {
-  margin: 10px 0 5px;
+header h1 {
+    margin: 0;
 }
 
-p {
-  margin: 0 16px 16px;
-  line-height: 1.4;
-  color: #555;
+header p {
+    margin: 5px 0 0;
 }
 
 .cat-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .cat-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  width: 250px;
-  overflow: hidden;
-  transition: transform 0.3s;
-  cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .cat-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cat-card h3 {
+    margin: 10px 0 5px;
+}
+
+.cat-card p {
+    font-size: 14px;
+    color: #555;
 }
 
 .cat-card:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-@media (max-width: 768px) {
-  .cat-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .cat-card {
-    width: 80%;
-  }
-}
-
-@media (max-width: 480px) {
-  .cat-card {
-    width: 95%;
-  }
+@media (max-width: 600px) {
+    .cat-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
